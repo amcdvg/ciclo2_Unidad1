@@ -1,0 +1,4 @@
+https://github.com/jodatm/misiontic
+
+para regresar al codigo anterior
+git checkout "comit"
