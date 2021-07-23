@@ -6,6 +6,10 @@ public class reto {
         inversion resultadoInversion2 = new inversion();
         System.out.println(resultadoInversion2.compararInversion(11,2005000.0,4));
 
+        inversion resultadoInversion3 = new inversion();
+        System.out.println(resultadoInversion3.compararInversion(11,2005000.0,0));
+
+
 
     } 
     
