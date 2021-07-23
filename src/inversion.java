@@ -9,8 +9,7 @@
 * Clase que representa un Proyecto.
 */
 
-public class inversion {
-    
+public class inversion {   
     // ---------------------------------------------
     // Atributos
     private int pTiempo; 
@@ -23,7 +22,6 @@ public class inversion {
     public double respuesta;
     // Métodos
     // ---------------------------------------------
-
     public double getpInteres() {
         return pInteres;
     }
@@ -50,14 +48,12 @@ public class inversion {
 
     public double calcularInteresCompuesto() {
         Total= Math.pow(1+getpInteres(), getpTiempo());
-        calcularInteresCompuesto = getpMonto()*(Total-1);
-        
+        calcularInteresCompuesto = getpMonto()*(Total-1);   
         return calcularInteresCompuesto;
     }
 
     public double calcularInteresSimple(){
         calcularInteresSimple = getpMonto() *getpTiempo()*getpInteres();
-
         return calcularInteresSimple;  
     }
    
@@ -73,21 +69,11 @@ public class inversion {
             setpMonto(pMonto);
             // Cálculo de la diferencia entre tipos de tasas 
             respuesta = calcularInteresCompuesto() - calcularInteresSimple();          
-
-            
             if ( respuesta > 0 ){                        
             return "La diferencia en el total de intereses generados para el proyecto, si escogemos entre evaluarlo a una tasa de interés Compuesto y evaluarlo a una tasa de interés Simple, asciende a la cifra de: $" + respuesta ;
             }
             else{
-                return "Faltan datos para calcular la diferencia en el total de intereses generados para el proyecto.";
-                
-            }
-            
-            
-        } 
-    
-    
-
-        
-    
+                return "Faltan datos para calcular la diferencia en el total de intereses generados para el proyecto.";    
+            }   
+        }   
 }
